@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-color: #e7e7e7;
+    font-size: 14px;
+    color: #1a1a1a;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* clear floats after the colums */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.col-12 {
+    float: left;
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+}
+
+label {
+    font-weight: bolder;
+}
+
+/* other */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+.mb-1 {
+    margin-bottom: 1em !important;
+}
+
+.pe-7 {
+    padding-right: 7px;
+}
+
+.section-heading {
+    font-size: 2.2em;
+    margin-bottom: 1.2em;
+    color: #484848;
+}
+
+/* input */
+.responsive-input {
+    width: 100%;
+    padding: 0.5em;
+}
+
+input {
+    outline: none;
+    border: 1px solid #e5e5e5;
+    transition: .5s ease;
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+/* this is for the contents in the contents area */
+.content-card {
+    background-color: #fff;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* buttons */
+.btn-primary {
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    display: inline-block;
+    margin-top: 15px;
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    border: 1px solid blue;
+    background-color: transparent;
+    color: blue;
+    border-radius: 5px;
+
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-center {
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width:992px) {
+    .col-6 {
+        width: 100%;
+
+    }
+
+
+}
+
+@media screen and (max-width:555px) {
+    .section-content {
+        width: 70%;
+    }
+}
